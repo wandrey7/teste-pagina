@@ -1,41 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Lopes</title>
     <style>
-      #flag1, #flag2 {
-        position: absolute;
-        width: 100px;
-        height: 100px;
+      body {
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Gay_Pride_Flag.svg/2560px-Gay_Pride_Flag.svg.png");
+        background-size: cover;
+        text-align: center;
       }
-      #flag1 {
-        background-color: red;
-        animation: move-right 1s linear infinite;
-      }
-      #flag2 {
-        background-color: blue;
-        animation: move-left 1s linear infinite;
-      }
-      @keyframes move-right {
-        from {
-          left: 0px;
-        }
-        to {
-          left: 100%;
-        }
-      }
-      @keyframes move-left {
-        from {
-          right: 0px;
-        }
-        to {
-          right: 100%;
-        }
+
+      h1 {
+        color: white;
+        font-size: 4em;
+        margin-top: 50px;
+        text-shadow: 2px 2px black;
       }
     </style>
   </head>
   <body>
     <h1>Lopes</h1>
-    <div id="flag1"></div>
-    <div id="flag2"></div>
   </body>
 </html>
