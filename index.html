@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Wandrey</title>
     <style>
-      body {
-        background-color: lightgray;
-        text-align: center;
+      #flag1, #flag2 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
       }
-
-      h1 {
-        color: darkblue;
-        font-size: 4em;
-        margin-top: 50px;
+      #flag1 {
+        background-color: red;
+        animation: move-right 1s linear infinite;
+      }
+      #flag2 {
+        background-color: blue;
+        animation: move-left 1s linear infinite;
+      }
+      @keyframes move-right {
+        from {
+          left: 0px;
+        }
+        to {
+          left: 100%;
+        }
+      }
+      @keyframes move-left {
+        from {
+          right: 0px;
+        }
+        to {
+          right: 100%;
+        }
       }
     </style>
   </head>
   <body>
-    <h1>Wandrey</h1>
+    <h1>Lopes</h1>
+    <div id="flag1"></div>
+    <div id="flag2"></div>
   </body>
 </html>
